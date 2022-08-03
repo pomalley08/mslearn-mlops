@@ -1,0 +1,6 @@
+$schema: https://azuremlschemas.azureedge.net/latest/data.schema.json
+name: diabetes-dev-folder
+version: 2
+type: uri_folder
+path: ../experimentation/data
+description: Dataset pointing to diabetes data stored as CSV on aml compute. Data is uploaded to default datastore.
