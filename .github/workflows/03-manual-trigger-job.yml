@@ -17,6 +17,8 @@ jobs:
         creds: ${{secrets.AZURE_CREDENTIALS}}
     - name: Trigger AML job
       run: |
-        az ml job create --file src/job.yml
+        az ml job create --file src/job.yml \
+        --resource-group diabetes-dev-rg \
+        --workspace-name aml-diabetes-dev
 
 
